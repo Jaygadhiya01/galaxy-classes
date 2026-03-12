@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Galaxy Classes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">🌌</div>Galaxy Classes</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="admission.html" class="btn btn-primary">Admission Now</a></div>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">🏠 Home</a><a href="about.html">📖 About</a><a href="courses.html">📚 Courses</a><a href="contact.html">📞 Contact</a>
+  <a href="admission.html" class="btn btn-primary">Admission Now</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="badge">We're Here to Help</div>
+    <h1>Contact Us</h1>
+    <p>Have questions? Reach out and we'll get back to you within 24 hours.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> › Contact</div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Info Card -->
+      <div>
+        <div class="contact-info-card reveal">
+          <div class="ci-title">Get In Touch</div>
+          <div class="ci-sub">We'd love to hear from you. Visit us, call us, or drop us a message.</div>
+
+          <div class="ci-item">
+            <div class="ci-icon">📍</div>
+            <div class="ci-text">
+              <div class="ci-label">Address</div>
+              <div class="ci-val">123, Education Hub Complex,<br/>Near City Mall, Navrangpura,<br/>Ahmedabad – 380009, Gujarat</div>
+            </div>
+          </div>
+
+          <div class="ci-item">
+            <div class="ci-icon">📞</div>
+            <div class="ci-text">
+              <div class="ci-label">Phone Numbers</div>
+              <div class="ci-val">+91 99999 99999<br/>+91 88888 88888</div>
+            </div>
+          </div>
+
+          <div class="ci-item">
+            <div class="ci-icon">✉️</div>
+            <div class="ci-text">
+              <div class="ci-label">Email</div>
+              <div class="ci-val">info@galaxyclasses.in<br/>admission@galaxyclasses.in</div>
+            </div>
+          </div>
+
+          <div class="ci-item">
+            <div class="ci-icon">🕐</div>
+            <div class="ci-text">
+              <div class="ci-label">Office Hours</div>
+              <div class="ci-val">Monday – Saturday<br/>7:00 AM – 8:00 PM<br/>Sunday: 9:00 AM – 1:00 PM</div>
+            </div>
+          </div>
+
+          <div class="ci-item">
+            <div class="ci-icon">💬</div>
+            <div class="ci-text">
+              <div class="ci-label">WhatsApp</div>
+              <div class="ci-val">+91 99999 99999<br/><a href="https://wa.me/919999999999" target="_blank" style="color:#67e8f9;font-weight:600">Chat Now →</a></div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" class="soc-btn" title="Facebook">📘</a>
+            <a href="#" class="soc-btn" title="Instagram">📸</a>
+            <a href="#" class="soc-btn" title="YouTube">▶️</a>
+            <a href="https://wa.me/919999999999" class="soc-btn" title="WhatsApp" target="_blank">💬</a>
+          </div>
+        </div>
+
+        <!-- Google Map Placeholder -->
+        <div class="map-placeholder reveal" style="margin-top:24px">
+          📍
+          <p>Galaxy Classes, Ahmedabad</p>
+          <span style="font-size:0.78rem;color:var(--text-light)">(Google Map integration goes here)</span>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form-card reveal reveal-delay-1">
+        <div class="cf-title">📬 Send Us a Message</div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="cName">Your Name <span style="color:#ef4444">*</span></label>
+              <input type="text" id="cName" placeholder="Enter your full name" />
+              <span class="error-msg" id="cNameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="cPhone">Phone Number</label>
+              <input type="tel" id="cPhone" placeholder="+91 XXXXX XXXXX" maxlength="10" />
+            </div>
+            <div class="form-group full">
+              <label for="cEmail">Email Address <span style="color:#ef4444">*</span></label>
+              <input type="email" id="cEmail" placeholder="your@email.com" />
+              <span class="error-msg" id="cEmailErr"></span>
+            </div>
+            <div class="form-group full">
+              <label for="cSubject">Subject <span style="color:#ef4444">*</span></label>
+              <input type="text" id="cSubject" placeholder="e.g., Admission Enquiry for Std 10" />
+              <span class="error-msg" id="cSubjectErr"></span>
+            </div>
+            <div class="form-group full">
+              <label for="cMessage">Message <span style="color:#ef4444">*</span></label>
+              <textarea id="cMessage" placeholder="Write your message or question here..." style="min-height:130px"></textarea>
+              <span class="error-msg" id="cMessageErr"></span>
+            </div>
+          </div>
+
+          <div class="form-actions" style="margin-top:20px">
+            <button type="submit" class="btn btn-primary" style="flex:1;justify-content:center">
+              📨 Send Message
+            </button>
+            <a href="https://wa.me/919999999999" target="_blank" class="btn btn-whatsapp" style="flex:1;justify-content:center">
+              💬 WhatsApp Us
+            </a>
+          </div>
+
+          <div class="success-banner" id="contactSuccess">
+            ✅ Message sent successfully! We will get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="badge">FAQs</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Quick answers to common questions about Galaxy Classes.</p>
+    </div>
+    <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px">
+
+      <details style="background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden" class="reveal">
+        <summary style="padding:18px 20px;font-weight:600;cursor:pointer;color:var(--text-dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+          What standards do you offer coaching for? <span style="color:var(--primary)">+</span>
+        </summary>
+        <div style="padding:0 20px 18px;color:var(--text-mid);font-size:0.92rem;line-height:1.7">
+          We offer comprehensive coaching for students from Standard 1 to Standard 12, covering both Science and Commerce streams in English and Gujarati Medium.
+        </div>
+      </details>
+
+      <details style="background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden" class="reveal">
+        <summary style="padding:18px 20px;font-weight:600;cursor:pointer;color:var(--text-dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+          What is the batch size at Galaxy Classes? <span style="color:var(--primary)">+</span>
+        </summary>
+        <div style="padding:0 20px 18px;color:var(--text-mid);font-size:0.92rem;line-height:1.7">
+          We maintain small batch sizes of maximum 15–20 students per batch. This ensures every student receives personal attention and no child is left behind.
+        </div>
+      </details>
+
+      <details style="background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden" class="reveal">
+        <summary style="padding:18px 20px;font-weight:600;cursor:pointer;color:var(--text-dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+          Do you offer a demo class before admission? <span style="color:var(--primary)">+</span>
+        </summary>
+        <div style="padding:0 20px 18px;color:var(--text-mid);font-size:0.92rem;line-height:1.7">
+          Yes! All new students are welcome to attend a free demo class before confirming admission. This helps students and parents experience our teaching quality and classroom environment.
+        </div>
+      </details>
+
+      <details style="background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden" class="reveal">
+        <summary style="padding:18px 20px;font-weight:600;cursor:pointer;color:var(--text-dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+          Do you provide coaching in Gujarati Medium? <span style="color:var(--primary)">+</span>
+        </summary>
+        <div style="padding:0 20px 18px;color:var(--text-mid);font-size:0.92rem;line-height:1.7">
+          Absolutely! We provide coaching in both English and Gujarati Medium. Students can choose the medium they are most comfortable with for better understanding of concepts.
+        </div>
+      </details>
+
+      <details style="background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden" class="reveal">
+        <summary style="padding:18px 20px;font-weight:600;cursor:pointer;color:var(--text-dark);list-style:none;display:flex;justify-content:space-between;align-items:center">
+          How do you keep parents informed about progress? <span style="color:var(--primary)">+</span>
+        </summary>
+        <div style="padding:0 20px 18px;color:var(--text-mid);font-size:0.92rem;line-height:1.7">
+          We conduct regular Parent-Teacher meetings and share weekly test results directly with parents via WhatsApp. Monthly progress reports are also shared covering performance trends and improvement areas.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container" style="position:relative;z-index:2">
+    <h2>Ready to Get Started?</h2>
+    <p>Apply for admission today or visit us for a free demo class.</p>
+    <div class="cta-buttons">
+      <a href="admission.html" class="btn btn-white">✏️ Apply for Admission</a>
+      <a href="https://wa.me/919999999999" class="btn btn-whatsapp" target="_blank">💬 WhatsApp Now</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="-webkit-text-fill-color:#fff;color:#fff"><div class="logo-icon">🌌</div>Galaxy Classes</a>
+        <p class="footer-desc">Quality coaching for Std 1–12. Science, Commerce. English & Gujarati Medium. Ahmedabad since 2014.</p>
+        <div class="footer-social"><a href="#" class="fsoc-btn">📘</a><a href="#" class="fsoc-btn">📸</a><a href="#" class="fsoc-btn">▶️</a><a href="#" class="fsoc-btn">💬</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">→ Home</a></li><li><a href="about.html">→ About</a></li><li><a href="courses.html">→ Courses</a></li><li><a href="admission.html">→ Admission</a></li><li><a href="contact.html">→ Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Courses</h4><ul><li><a href="courses.html">→ Primary (1–5)</a></li><li><a href="courses.html">→ Secondary (6–8)</a></li><li><a href="courses.html">→ Board (9–10)</a></li><li><a href="courses.html">→ Std 11 Science</a></li><li><a href="courses.html">→ Std 12 Commerce</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4>
+        <div class="footer-contact-item"><div class="fci-icon">📍</div><span>123, Education Hub, Ahmedabad – 380009</span></div>
+        <div class="footer-contact-item"><div class="fci-icon">📞</div><span>+91 99999 99999</span></div>
+        <div class="footer-contact-item"><div class="fci-icon">✉️</div><span>info@galaxyclasses.in</span></div>
+        <div class="footer-contact-item"><div class="fci-icon">🕐</div><span>Mon–Sat: 7AM–8PM</span></div>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.08);padding:22px 0"><div class="container footer-bottom"><span>© 2024 Galaxy Classes. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div>
+</footer>
+
+<a href="https://wa.me/919999999999" class="wa-float" target="_blank">💬</a>
+<script src="script.js"></script>
+</body>
+</html>

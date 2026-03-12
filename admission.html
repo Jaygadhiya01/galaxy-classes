@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission Form – Galaxy Classes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">🌌</div>Galaxy Classes</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="admission.html" class="btn btn-primary">Admission Now</a></div>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">🏠 Home</a><a href="about.html">📖 About</a><a href="courses.html">📚 Courses</a><a href="contact.html">📞 Contact</a>
+  <a href="admission.html" class="btn btn-primary">Admission Now</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="badge">New Admission 2024–25</div>
+    <h1>Admission Form</h1>
+    <p>Fill in the form below and our team will contact you within 24 hours.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> › Admission</div>
+  </div>
+</section>
+
+<!-- ADMISSION INFO STRIP -->
+<section style="background:var(--bg-light);padding:40px 0;border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;text-align:center">
+      <div class="reveal">
+        <div style="font-size:2rem;margin-bottom:8px">📅</div>
+        <div style="font-weight:700;color:var(--text-dark)">Admission Open</div>
+        <div style="font-size:0.85rem;color:var(--text-light)">Year 2024–25</div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div style="font-size:2rem;margin-bottom:8px">⏰</div>
+        <div style="font-weight:700;color:var(--text-dark)">Limited Seats</div>
+        <div style="font-size:0.85rem;color:var(--text-light)">Max 15–20 per batch</div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div style="font-size:2rem;margin-bottom:8px">📞</div>
+        <div style="font-weight:700;color:var(--text-dark)">Quick Response</div>
+        <div style="font-size:0.85rem;color:var(--text-light)">Within 24 hours</div>
+      </div>
+      <div class="reveal">
+        <div style="font-size:2rem;margin-bottom:8px">🆓</div>
+        <div style="font-weight:700;color:var(--text-dark)">Free Demo Class</div>
+        <div style="font-size:0.85rem;color:var(--text-light)">For all new students</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSION FORM -->
+<section class="form-section">
+  <div class="container">
+    <div class="form-card reveal">
+
+      <div class="form-header">
+        <h2>✏️ Student Admission Form</h2>
+        <p>Fields marked with <span style="color:#fde68a">*</span> are required. All information is kept confidential.</p>
+      </div>
+
+      <div class="form-body">
+        <form id="admissionForm" novalidate>
+
+          <!-- Section: Student Information -->
+          <div style="margin-bottom:28px">
+            <div style="font-weight:700;color:var(--text-dark);margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:8px">
+              👤 Student Information
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="studentName">Student Name <span>*</span></label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter student's full name" />
+                <span class="error-msg" id="studentNameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="standard">Standard <span>*</span></label>
+                <select id="standard" name="standard">
+                  <option value="">— Select Standard —</option>
+                  <optgroup label="Primary">
+                    <option value="Std 1">Std 1</option>
+                    <option value="Std 2">Std 2</option>
+                    <option value="Std 3">Std 3</option>
+                    <option value="Std 4">Std 4</option>
+                    <option value="Std 5">Std 5</option>
+                  </optgroup>
+                  <optgroup label="Secondary">
+                    <option value="Std 6">Std 6</option>
+                    <option value="Std 7">Std 7</option>
+                    <option value="Std 8">Std 8</option>
+                  </optgroup>
+                  <optgroup label="Board">
+                    <option value="Std 9">Std 9</option>
+                    <option value="Std 10">Std 10</option>
+                  </optgroup>
+                  <optgroup label="Higher Secondary – Science">
+                    <option value="Std 11 Science">Std 11 Science</option>
+                    <option value="Std 12 Science">Std 12 Science</option>
+                  </optgroup>
+                  <optgroup label="Higher Secondary – Commerce">
+                    <option value="Std 11 Commerce">Std 11 Commerce</option>
+                    <option value="Std 12 Commerce">Std 12 Commerce</option>
+                  </optgroup>
+                </select>
+                <span class="error-msg" id="standardErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="medium">Medium of Study <span>*</span></label>
+                <select id="medium" name="medium">
+                  <option value="">— Select Medium —</option>
+                  <option value="English Medium">English Medium</option>
+                  <option value="Gujarati Medium">Gujarati Medium</option>
+                </select>
+                <span class="error-msg" id="mediumErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="schoolName">School Name <span>*</span></label>
+                <input type="text" id="schoolName" name="schoolName" placeholder="Enter current school name" />
+                <span class="error-msg" id="schoolNameErr"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Parent Information -->
+          <div style="margin-bottom:28px">
+            <div style="font-weight:700;color:var(--text-dark);margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:8px">
+              👨‍👩‍👧 Parent / Guardian Information
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fatherName">Father's Name <span>*</span></label>
+                <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's full name" />
+                <span class="error-msg" id="fatherNameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="motherName">Mother's Name <span>*</span></label>
+                <input type="text" id="motherName" name="motherName" placeholder="Enter mother's full name" />
+                <span class="error-msg" id="motherNameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="mobile">Student Mobile Number <span>*</span></label>
+                <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" maxlength="10" />
+                <span class="error-msg" id="mobileErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="parentMobile">Parent Mobile Number <span>*</span></label>
+                <input type="tel" id="parentMobile" name="parentMobile" placeholder="10-digit parent mobile" maxlength="10" />
+                <span class="error-msg" id="parentMobileErr"></span>
+              </div>
+              <div class="form-group full">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com (optional)" />
+                <span class="error-msg" id="emailErr"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Address & Message -->
+          <div style="margin-bottom:28px">
+            <div style="font-weight:700;color:var(--text-dark);margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:8px">
+              📋 Additional Details
+            </div>
+            <div class="form-grid">
+              <div class="form-group full">
+                <label for="address">Home Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter full home address" />
+              </div>
+              <div class="form-group full">
+                <label for="message">Message / Special Requirements</label>
+                <textarea id="message" name="message" placeholder="Any specific requirements, preferred batch timing, or questions for us..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Actions -->
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              ✅ Submit Admission
+            </button>
+            <button type="button" id="whatsappBtn" class="btn btn-whatsapp">
+              💬 Send WhatsApp Enquiry
+            </button>
+          </div>
+
+          <!-- Success Banner -->
+          <div class="success-banner" id="admissionSuccess">
+            ✅ Thank you! Your admission form has been submitted successfully. We will contact you within 24 hours.
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <!-- Info Cards Below Form -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;margin-top:40px">
+      <div class="why-card reveal">
+        <div class="why-icon">📞</div>
+        <div class="why-title">Call Us Directly</div>
+        <div class="why-desc">+91 99999 99999 or +91 88888 88888<br/>Mon–Sat: 9AM–7PM</div>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon">💬</div>
+        <div class="why-title">WhatsApp Us</div>
+        <div class="why-desc">Send a message directly on WhatsApp for instant response and demo class scheduling.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon">🎓</div>
+        <div class="why-title">Free Demo Class</div>
+        <div class="why-desc">All new admissions get a free demo class to experience our teaching quality firsthand.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="-webkit-text-fill-color:#fff;color:#fff"><div class="logo-icon">🌌</div>Galaxy Classes</a>
+        <p class="footer-desc">Admissions open for 2024–25. Join hundreds of successful students at Galaxy Classes, Ahmedabad.</p>
+        <div class="footer-social"><a href="#" class="fsoc-btn">📘</a><a href="#" class="fsoc-btn">📸</a><a href="#" class="fsoc-btn">▶️</a><a href="#" class="fsoc-btn">💬</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">→ Home</a></li><li><a href="about.html">→ About</a></li><li><a href="courses.html">→ Courses</a></li><li><a href="admission.html">→ Admission</a></li><li><a href="contact.html">→ Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Courses</h4><ul><li><a href="courses.html">→ Primary (1–5)</a></li><li><a href="courses.html">→ Secondary (6–8)</a></li><li><a href="courses.html">→ Board (9–10)</a></li><li><a href="courses.html">→ Std 11 Science</a></li><li><a href="courses.html">→ Std 12 Commerce</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><div class="fci-icon">📍</div><span>123, Education Hub, Ahmedabad</span></div><div class="footer-contact-item"><div class="fci-icon">📞</div><span>+91 99999 99999</span></div><div class="footer-contact-item"><div class="fci-icon">✉️</div><span>info@galaxyclasses.in</span></div></div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.08);padding:22px 0"><div class="container footer-bottom"><span>© 2024 Galaxy Classes. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div>
+</footer>
+
+<a href="https://wa.me/919999999999" class="wa-float" target="_blank">💬</a>
+<script src="script.js"></script>
+</body>
+</html>
